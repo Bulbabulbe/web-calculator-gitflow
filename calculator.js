@@ -1,7 +1,27 @@
 /**
- * Entry point for calculator operations
- * The logic will be implemented in feature branches
+ * Returns the sum of two numbers
+ * @param {number} a First operand
+ * @param {number} b Second operand
+ * @returns {number} Sum of a and b
+ */
+function add(a, b) {
+    return a + b;
+}
+
+/**
+ * Main calculation dispatcher
+ * Calls the correct operation based on user selection
  */
 function calculate() {
-    // To be implemented
+    const number1 = Number(document.getElementById("number1").value);
+    const number2 = Number(document.getElementById("number2").value);
+    const operation = document.getElementById("operation").value;
+
+    let result = 0;
+
+    if (operation === "add") {
+        result = add(number1, number2);
+    }
+
+    document.getElementById("result").textContent = "Result: " + result;
 }
