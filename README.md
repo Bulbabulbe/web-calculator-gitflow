@@ -7,3 +7,4 @@ a Git workflow inspired by Git Flow.
 ## Features
 - Addition operation
 - Subtraction operation
+- Multiplication operation

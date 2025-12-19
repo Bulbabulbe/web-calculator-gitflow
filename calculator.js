@@ -19,6 +19,16 @@ function subtract(a, b) {
 }
 
 /**
+ * Returns the product of two numbers
+ * @param {number} a First operand
+ * @param {number} b Second operand
+ * @returns {number} Product of a and b
+ */
+function multiply(a, b) {
+    return a * b;
+}
+
+/**
  * Main calculation dispatcher
  * Calls the correct operation based on user selection
  */
@@ -35,6 +45,10 @@ function calculate() {
 
     if (operation === "subtract") {
         result = subtract(number1, number2);
+    }
+
+    if (operation === "multiply") {
+        result = multiply(number1, number2);
     }
 
     document.getElementById("result").textContent = "Result: " + result;
